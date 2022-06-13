@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1641315553 source:c:\kleon_egyetem\codeblock_dolgok\codeblock_projects\beadandó_komplex\komplex\main.cpp
+	<iostream>
+	<vector>
+

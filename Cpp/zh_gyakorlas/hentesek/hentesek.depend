@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1641241451 source:c:\kleon_egyetem\codeblock_dolgok\codeblock_projects\zh\hentesek\main.cpp
+	<iostream>
+	<vector>
+
