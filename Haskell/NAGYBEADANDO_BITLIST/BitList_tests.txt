@@ -1,0 +1,41 @@
+countEliminable [1,0,0,1] == 1
+countEliminable [0,0,1,1,1,0,1,1] == 3
+countEliminable [] == 0
+countEliminable [1,0,0,1,1,0,1,1,0,1,1,1,0,0,0,1,1] == 6
+countEliminable [1,1,1,1,1,1,1,1,0] == 1
+countEliminable [0,1,0] == 0
+countEliminable [1,1] == 1
+countEliminable [1] == 0
+
+eliminateNth [0,0,1,1,1,0,1,1] 2 == [0,0,0,1,1]
+eliminateNth [1,0,0,1,1,0,1,1,1] 5 == [1,0,0,1,1,0]
+eliminateNth [1,1,0,1,0,0,1] 0 == [0,1,0,0,1]
+eliminateNth [1,0,1,1,0,0,1] 5 == [1,0,1,1,1]
+eliminateNth [1,1] 0 == []
+eliminateNth [0,0] 12 == []
+eliminateNth [1,1,1,1,1,1,0] 3 == [0]
+eliminateNth [1,1,1] 1 == []
+eliminateNth [1] 1 == [1]
+eliminateNth [1,0,0,1,0,0,1,1,1,0,0] 2 == [1,0,0,1,1,1,1,0,0] 
+
+elimination [1,0,0,1]
+elimination []
+elimination [1,0,0,0,1,0,0,1]
+elimination [1,0,0,1,1]
+elimination [1,1,0,1,0,1,0,0,1,0,1,0,1]
+elimination [1,1,0,1,0,1,0,0,1,0,1,1,0]
+elimination [1,0,0,1,0,1,0,0,1,0,1,1]
+elimination [1,0,1,0,0,1,0,1]
+elimination [1,0,1,1,0,1,0,0,1,0,1,1]
+elimination [1,1,0,0,1,1,0,0,1,0,1]
+not $ elimination [1,1,0,1,0,0,1]
+not $ elimination [1,0,1,0,1,0,0,1,0,1,1]
+not $ elimination [1,0,1,0,1,0,1,0,1,1]
+not $ elimination [1,0,1,0,1,0,1,0,1]
+not $ elimination [1,0,1,0,1,0,0,1,0,1,1,1]
+not $ elimination [1,1,0,1,0,1,0,0,1,0,1,1]
+not $ elimination [1,0,1,0,1,0,0,1,0,1,1,0]
+not $ elimination [1,0,1,0,1,0,0,1,0,1,1]
+not $ elimination [1,0,0,0,1,0,1]
+not $ elimination [1,0]
+not $ elimination [1,0,0,0,1,0,1]
